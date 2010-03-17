@@ -1,0 +1,12 @@
+36fe02de86ec9ec2d30c2791c1da9e31 *DESCRIPTION
+e9f326c56e003b20e35a26f367b1ca33 *NAMESPACE
+c862d020fb29a3316f77aa708054b594 *R/RcmdrPlugin.StatisticalURV.R
+7e9e068752b6b4be685419c6953176b4 *R/cancelHelp.R
+80668c4146cbe06bb4d5736963b8f943 *R/oneWayANOVA.R
+cf2fdfa30502b80d1b0731eb27dda9c2 *R/twoWayANOVA.R
+75f1329951016b58e64f9f747001f59a *inst/CHANGES
+fba64ea8c77acc4295f774f63c3382a4 *inst/etc/menus.txt
+2ba8bb99d52af686de6b0ad76f198981 *man/RcmdrPlugin.StatisticalURV-internal.Rd
+091e52cce08362176e224bf0dfc63561 *man/RcmdrPlugin.StatisticalURV-package.Rd
+0eab2ec258a507debcd613a2b3351ec2 *man/oneWayANOVAURV.Rd
+6292790af76572fb95ed74a2962b086f *man/twoWayANOVAURV.Rd

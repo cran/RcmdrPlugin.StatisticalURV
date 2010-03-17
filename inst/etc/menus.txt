@@ -1,0 +1,23 @@
+# Some Rcmdr menus for the StatisticalURV package
+# When the plug-in is loaded, these menus are merged with the standard Rcmdr menus
+
+# last modified: 7 June 2012 by J. Fox
+
+#	type    menu/item		operation/parent	label								command/menu		activation    				install?
+	menu    URVMenu  		topMenu				""									""					""          				""
+	menu	statisticalMenu	URVMenu				""									""					""							""
+	menu    mediasMenu		statisticalMenu		""									""					""          				""
+	
+	item    mediasMenu		command				"ANOVA de un Factor URV"			oneWayANOVA			"numericP() && factorsP()" 	"packageAvailable('multcomp') && packageAvailable('agricolae')"
+    item    mediasMenu      command				"ANOVA de Multiples Factores URV"	twoWayANOVA			"numericP() && factorsP()"  "packageAvailable('multcomp') && packageAvailable('car')"
+	
+	#menu	analisisMenu	statisticalMenu		""									""					""							""
+	
+    item    topMenu         cascade         	"StatisticalURV"					URVMenu				""          				""
+    item    URVMenu  		cascade         	"Estadisticos"						statisticalMenu		""          				""
+	item	statisticalMenu	cascade				"Medias"							mediasMenu			""							""
+
+	
+	###############MENUS IN RCMD######################
+	item    meansMenu       command				"ANOVA de un Factor URV"			oneWayANOVA			"numericP() && factorsP()" 	"packageAvailable('multcomp') && packageAvailable('agricolae')"
+    item    meansMenu       command				"ANOVA de Multiples Factores URV"	twoWayANOVA			"numericP() && factorsP()"  "packageAvailable('multcomp') && packageAvailable('car')"
