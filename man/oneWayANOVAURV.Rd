@@ -15,8 +15,8 @@ There are three option buttons: Post Hoc, Options and Plots.\cr
 Post Hoc's Window. You can choose between: \cr
 - Bonferroni: This one uses \code{\link[stats]{pairwise.t.test}} function.\cr
 - Tukey: This one uses: \code{\link[stats]{aov}},\code{\link[multcomp]{glht}} and \code{\link[stats]{confint}} functions. The  \code{\link[graphics]{par}} and \code{\link[graphics]{plot}} functions are used to draw plots\cr
-- LSD: This one uses: The \code{\link[stats]{lm}} and \code{\link[stats]{anova}} functios to calculate DFerror, MSerror for the \code{\link[agricolae]{LSD.test}} function.\cr\cr
-Options Window: It shows the results of means, standard deviatons and quantiles. It uses the \code{\link[Rcmdr]{numSummary}} function. Results of means and standard deviations are pre-selected \cr\cr
+- LSD: This one uses: The \code{\link[stats]{lm}} and \code{\link[stats]{anova}} functions to calculate DFerror, MSerror for the \code{\link[agricolae]{LSD.test}} function.\cr\cr
+Options Window: It shows the results of means, standard deviations and quantiles. It uses the \code{\link[Rcmdr]{numSummary}} function. Results of means and standard deviations are pre-selected \cr\cr
 Graphics Window: Plots means with error bars for standard error, standard deviation, confidence interval or without errors bars. It uses \code{\link[Rcmdr]{plotMeans}} function.\cr
 }
 

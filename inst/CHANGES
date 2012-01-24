@@ -1,3 +1,7 @@
 Version 1.0-0
 
- o  Initial version released to CRAN.-en fase de pruebas-
+ o  Initial version released to CRAN.
+
+Version 1.0-1
+
+ o  Modified start-up (replaced .First.lib by .onAttach).

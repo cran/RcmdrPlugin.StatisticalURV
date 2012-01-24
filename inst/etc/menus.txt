@@ -1,8 +1,6 @@
 # Some Rcmdr menus for the StatisticalURV package
 # When the plug-in is loaded, these menus are merged with the standard Rcmdr menus
 
-# last modified: 7 June 2012 by J. Fox
-
 #	type    menu/item		operation/parent	label								command/menu		activation    				install?
 	menu    URVMenu  		topMenu				""									""					""          				""
 	menu	statisticalMenu	URVMenu				""									""					""							""

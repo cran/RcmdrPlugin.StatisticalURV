@@ -12,9 +12,9 @@ This package provides an Rcmdr "plug-in". It provides a one way ANOVA dialog, ..
 \tabular{ll}{
 Package: \tab RcmdrPlugin.StatisticalURV\cr
 Type: \tab Package\cr
-Version: \tab 1.0-0\cr
-Date: \tab 2012-12-06\cr
-License: \tab GPL-3\cr
+Version: \tab 1.0-1\cr
+Date: \tab 2013-24-01\cr
+License: \tab GPL (>= 3)\cr
 }
 }
 

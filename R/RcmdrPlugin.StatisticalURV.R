@@ -5,27 +5,23 @@
 # can be included in any Rcmdr plug-in package to cause the package to load
 # the Rcmdr if it is not already loaded
 
-.First.lib <- function(libname, pkgname){
+.onAttach <- function(libname, pkgname){
     if (!interactive()) return()
-   Rcmdr <- options()$Rcmdr
+    Rcmdr <- options()$Rcmdr
     plugins <- Rcmdr$plugins
-    if ((!pkgname %in% plugins) && !getRcmdr("autoRestart")) {
+# Load required packages
+	if (!pkgname %in% plugins) {
         Rcmdr$plugins <- c(plugins, pkgname)
         options(Rcmdr=Rcmdr)
-        closeCommander(ask=FALSE, ask.save=TRUE)
-       Commander()
+        if("package:Rcmdr" %in% search()) {
+            if(!getRcmdr("autoRestart")) {
+                options(Rcmdr=Rcmdr)
+                closeCommander(ask=FALSE, ask.save=TRUE)
+                Commander()
+            }
+        }
+        else {
+            Commander()
         }
     }
-
-#.onAttach <- function(libname, pkgname){
-#    if (!interactive()) return()
-#    Rcmdr <- options()$Rcmdr
-#    plugins <- Rcmdr$plugins
-#Load required packages
-#    if ((!pkgname %in% plugins) && !getRcmdr("autoRestart")) {
-#        Rcmdr$plugins <- c(plugins, pkgname)
-#        options(Rcmdr=Rcmdr)
-#        closeCommander(ask=FALSE, ask.save=TRUE)
-#        Commander()
-#	}
-#}
+}
